@@ -1,0 +1,9 @@
+.col-sm-4.col-md-3.inline-block
+	=button_to "/pagar",method: :post,class:"payment-btn paypal-btn no-margin" do
+		Pagar Con
+		=image_tag "paypal.png",height:40
+
+.col-sm-4.col-md-3.inline-block
+	=content_tag :button,method: :post,class:"payment-btn card-btn no-margin" do
+		(no disponible aun)
+		=image_tag "card2.png",height:40

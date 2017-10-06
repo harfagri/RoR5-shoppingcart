@@ -1,0 +1,35 @@
+@font-face{
+	font-family:"Scratched";
+	src: url(<%= asset_path("Scratched.ttf") %>) format('truetype');
+}
+@font-face{
+	font-family:"bad";
+	src: url(<%= asset_path("Bad_Behaviour.ttf") %>) format('truetype');
+}
+@font-face{
+	font-family:"octin";
+	src: url(<%= asset_path("octin.ttf") %>) format('truetype');
+}
+
+.scrat{
+	font-family:"Scratched";
+}
+.bad{
+	font-family:"bad";
+}
+.octin{
+	font-family:"octin";
+}
+.landing-form{
+	border:none;
+	outline:none;
+	border-bottom: solid 1px #4269FC;
+	font-size: 1.5em;
+	color: #4269FC;
+
+}
+
+::-webkit-input-placeholder{
+	color: #4269FC;
+	opacity: 0.7;
+}

@@ -1,0 +1,109 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+$green: #A0CAA0;
+$black: #000000;
+$grey: #C6CAC6;
+$grey2: #B5BBB5;
+$blue: #4269FC;
+$red: #E6826A;
+$lblue: #93B6D8;
+
+.green{
+	background-color: $green;
+}
+.black{
+	background-color: $black;
+}
+.green-text{
+	color: $green;
+}
+.blue{
+	background-color: $blue;
+}
+.blue-text{
+	color:$blue;
+}
+.light-blue{
+	background-color: $lblue;
+}
+.light-blue-text{
+	color:$lblue;
+}
+.red{
+	background-color:$red;
+}
+.red-text{
+	color:$red;
+}
+.grey{
+	background-color: $grey;
+}
+.grey-text{
+	color:$grey;
+}
+.other-grey{
+	background-color: $grey2;
+}
+.other-grey-text{
+	color:$grey2;
+}
+.white{
+	background-color:white;
+}
+.white-text{
+	color:white;
+}
+
+.big-padding{
+	padding:2em;
+}
+.large-padding{
+	padding:5px 10px;
+}
+.no-padding{
+	padding:0;
+}
+.no-float{
+	float:none !important;
+}
+.inline-block{
+	float:none !important;
+	display:inline-block;
+	vertical-align:middle;
+	margin-right: -4px;
+}
+
+.ultra-big{
+	font-size:7em;
+}
+
+.bigger{
+	font-size:5em;
+}
+.medium{
+	font-size:1.5em;
+}
+.normal{
+	font-size:1.2em;
+}
+.small{
+	font-size:12px;
+}
+.top-space{
+	margin-top:1em;
+}
+.bottom-space{
+	margin-bottom:2em;
+}
+.bold{
+	font-weight:bold;
+}
+.no-margin{
+	margin:0;
+}
+.in-top{
+	vertical-align:top !important;
+}

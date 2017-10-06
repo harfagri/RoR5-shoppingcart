@@ -1,0 +1,49 @@
+%header.black.big-padding
+	.col-md-10.no-float.center-block
+		.col-md-6.no-padding.inline-block
+			=image_tag "valknut.svg",width:"100"
+			%h1.white-text.ultra-big.scrat
+				
+				Levantate y Pelea
+		.col-md-5.inline-block
+			=image_tag "crow.png"
+.blue.white-text.big-padding.scrat
+	%h2.bigger.scrat.text-center
+
+		publica con nosotros
+	%div.text-center
+		.col-md-3.inline-block.text-left
+			=image_tag "upload-icon.png", class:"col-md-8 inline-block"
+			.top-space
+				%span.medium.octin
+					sube tu producto en linea
+				%p.white-text.text-justify.small.octin
+					Carga tu producto el cual quieras
+					promocionar y listo.
+		.col-md-3.inline-block.text-left
+			=image_tag "promo.png", class:"col-md-8 inline-block"
+			.top-space
+				%span.medium.octin
+					promocionalo en tus redes
+				%p.white-text.text-justify.small.octin
+					envia el link para que tu producto sea visto
+		.col-md-3.inline-block.text-left
+			=image_tag "payment.png", class:"col-md-8 inline-block"
+			.top-space
+				%span.medium.octin
+					vende online
+				%p.white-text.text-justify.small.octin
+					vende en linea y de forma rapida y segura
+.white.text-center.big-padding.octin{style:"margin-top:5em;"}
+	.col-md-3.inline-block.text-left
+		=image_tag "multimedia.png"
+	.col-md-3.inline-block.text-left
+		=image_tag "productos.png",width:"250"
+		%p.medium.col-md-11.center-block.no-float.top-space
+			%strong
+				Sube contenido,diseños,productos,publicalos y vende
+.top-space.big.padding.white.bottom-space
+	.col-md-11.col-xs-12.center-block.no-float
+		=form_tag(create_email_path,method: :post,remote:true,id: "emails-form") do
+			=email_field_tag "email",nil,class:"col-xs-12 inline-block text-center landing-form",placeholder:"Subscribe  tu correo aqui (Subscribe here)"
+		#email-info.blue.white-text.large-padding

@@ -1,0 +1,25 @@
+%header
+	%nav.black
+		%ul.no-list.no-padding.text-center
+			%li.col-md-4.inline-block
+				-if user_signed_in?
+					=link_to root_path, class:"right-space white-text" do
+						%i.mdi-action-shopping-basket
+						Tienda Online
+					=link_to root_path, class:"right-space white-text" do
+						%i.mdi-action-trending-up
+						Compras
+					=link_to root_path, class:"right-space white-text" do
+						%i.mdi-action-alarm
+						Ofertas-Descuentos
+					
+			%li.col-md-4.inline-block.text-center
+				=image_tag "valknut.svg", height:"100px"
+			%li.col-md-4.inline-block
+				=link_to carrito_path,class:"white-text right-space" do
+					%i.mdi-action-shopping-cart
+					Mi Carro
+					(
+					= @shopping_cart.products.count
+					)
+				=link_to "Cerrar sesion",destroy_user_session_path,method: :delete , class:"white-text "
